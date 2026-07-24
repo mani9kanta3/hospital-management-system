@@ -1,0 +1,123 @@
+.navbar-brand{
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+#navbarSupportedContent a:hover{
+   color: #0d6efd;
+}
+.second-section{
+    background-color: #dceeff;
+}
+
+.quality-font{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.offer-font{
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+}
+
+.doctor-img{
+    margin-left: -90px;
+    margin-bottom: 50px;
+}
+
+.custom-btn{
+    width: 230px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.font-3rd-section{
+    font-size: 17px;
+    font-weight: bold;;
+}
+
+.text-3rd-section{
+    color: rgb(88, 88, 88);
+}
+
+.third-section{
+    margin-top: -50px;
+}
+
+.corners{
+    border-radius: 20px;
+}
+
+.card-title{
+    font-size: 17px;
+}
+
+.card-text{
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+.doctor-image{
+    height: 180px;
+    object-fit: cover;
+}
+
+.designation{
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+}
+
+.button-view{
+    width: 255px;
+}
+
+.appointment{
+    border-radius: 15px;
+}
+
+.book-btn{
+    color: #0d6efd;
+    font-size: 16px;
+    width: 270px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.number-text{
+    color: rgb(88, 88, 88);
+    font-size: 16px;
+}
+
+.number{
+    font-weight: bold;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.footer-section{
+    background-color: #042047;
+    color: white
+}
+
+.footer-section a{
+    color:white;
+    text-decoration: none;
+}
+
+.footer-section a:hover{
+    color: #0d6efd;
+}
+
+.list-unstyled{
+    font-size: 15px;
+}
+
+.header{
+    color: #0d6efd;
+    font-weight: bold;
+}
