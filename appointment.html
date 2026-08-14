@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./hosp-logo.png">
+    <script src="https://kit.fontawesome.com/942547a0cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light p-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="./hosp-logo.png" alt="" width="35px"> Medicare Hospital</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-title">
+            <li class="nav-item ms-3 me-3">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ms-3 me-3">
+            <a class="nav-link active" aria-current="page" href="#">Doctors</a>
+            </li>
+            <li class="nav-item ms-3 me-3">
+            <a class="nav-link active" aria-current="page" href="#">Patients</a>
+            </li>
+            <li class="nav-item ms-3 me-3">
+            <a class="nav-link active" aria-current="page" href="#">Appointments</a>
+            </li>
+            <li class="nav-item ms-3 me-3">
+            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item ms-3 me-5">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+            </li>
+            <button class="btn btn-primary">Book Appointment</button>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="container-fluid second-section">
+        <div class="container">
+            <div class="d-flex p-4">
+                <div class="banner-icon ms-3 me-4">
+                    <i class="fa-solid fa-calendar-check text-primary"></i>
+                </div>
+                <div>
+                    <h1>Book an Appointment</h1>
+                    <p class="page-path"><a href="./index.html">Home</a> <i class="fa-solid fa-angle-right"></i>
+                        <a href="#">Appointments</a> <i class="fa-solid fa-angle-right"></i>
+                        <span class="text-dark">Book Appointment</span></p>
+                    <p class="offer-font">Fill in the details below to book an appointment <br> with our specialist doctors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="bg-white shadow p-4 corners">
+                    <h5 class="form-heading"><i class="fa-solid fa-clipboard text-primary me-2"></i> Appointment Details</h5>
+                    <hr>
+                    <form>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Full Name <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fa-solid fa-user text-secondary"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter your full name">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Phone Number <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fa-solid fa-phone text-secondary"></i></span>
+                                    <input type="tel" class="form-control" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Email Address <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fa-solid fa-envelope text-secondary"></i></span>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Select Doctor <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fa-solid fa-user-doctor text-secondary"></i></span>
+                                    <select class="form-select">
+                                        <option>-- Select Doctor --</option>
+                                        <option>Dr. Anjali Sharma</option>
+                                        <option>Dr. Rahul Verma</option>
+                                        <option>Dr. Priya Patel</option>
+                                        <option>Dr. Amith Singh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Department <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fa-solid fa-table-cells-large text-secondary"></i></span>
+                                    <select class="form-select">
+                                        <option>-- Select Department --</option>
+                                        <option>General Treatment</option>
+                                        <option>Cardiology</option>
+                                        <option>Neurology</option>
+                                        <option>Pediatrics</option>
+                                        <option>Emergency Care</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Date <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fa-solid fa-calendar-days text-secondary"></i></span>
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Time <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fa-solid fa-clock text-secondary"></i></span>
+                                    <select class="form-select">
+                                        <option>Select time</option>
+                                        <option>09:00 AM</option>
+                                        <option>11:00 AM</option>
+                                        <option>02:00 PM</option>
+                                        <option>05:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Appointment Type <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-white"><i class="fa-solid fa-stethoscope text-secondary"></i></span>
+                                    <select class="form-select">
+                                        <option>-- Select Type --</option>
+                                        <option>New Consultation</option>
+                                        <option>Follow Up</option>
+                                        <option>Health Checkup</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label field-label">Symptoms / Reason</label>
+                                <textarea class="form-control" rows="2" placeholder="Briefly describe your symptoms"></textarea>
+                            </div>
+                        </div>
+                        <div class="note-box p-3 mt-3">
+                            <p class="mb-0 note-text"><i class="fa-solid fa-circle-info text-primary me-2"></i>
+                                <b>Note:</b> Please arrive 15 minutes before your appointment time. Carry any relevant medical reports.</p>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary confirm-btn"><i class="fa-solid fa-calendar-check me-2"></i> Confirm Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="bg-white shadow p-4 corners">
+                    <h5 class="form-heading"><i class="fa-solid fa-calendar-days text-primary me-2"></i> Appointment Information</h5>
+                    <hr>
+                    <div class="d-flex mt-4">
+                        <div class="info-icon me-3">
+                            <i class="fa-solid fa-clock text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-primary info-title">Booking Hours</h6>
+                            <p class="info-text mb-0">Mon - Sat : 8:00 AM - 8:00 PM</p>
+                            <p class="info-text">Sun : 9:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <div class="info-icon me-3">
+                            <i class="fa-solid fa-hourglass-half text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-primary info-title">Appointment Duration</h6>
+                            <p class="info-text">Each appointment is typically 15 - 30 minutes</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <div class="info-icon me-3">
+                            <i class="fa-solid fa-file-lines text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-primary info-title">Cancellation Policy</h6>
+                            <p class="info-text">Please cancel at least 2 hours in advance to avoid charges.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <div class="info-icon me-3">
+                            <i class="fa-solid fa-phone text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-primary info-title">Need Help?</h6>
+                            <p class="info-text mb-0">Call us at +91 98765 43210</p>
+                            <p class="info-text">or email info@medicare.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-4 footer-section mt-5">
+        <div class="container">
+            <footer class="medicare-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h5><img src="./hosp-logo.png" alt="" width="30px"> Medicare Hospital</h5>
+                        <p class="list-unstyled">We are commited to providing quality healthcare services with compassion and excellence.</p>
+                        <div>
+                            <i class="fa-brands fa-facebook-f me-3"></i>
+                            <i class="fa-brands fa-twitter me-3"></i>
+                            <i class="fa-brands fa-linkedin-in me-3"></i>
+                            <i class="fa-brands fa-instagram me-3"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="">Home</a></li>
+                            <li class="mt-1"><a href="">About us</a></li>
+                            <li class="mt-1"><a href="">Doctors</a></li>
+                            <li class="mt-1"><a href="">Appointments</a></li>
+                            <li class="mt-1"><a href="">Contact us</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                    <h5>Our services</h5>
+                    <ul class="list-unstyled">
+                        <li>General Treatment</a></li>
+                        <li class="mt-1">Cardiology</a></li>
+                        <li class="mt-1">Neurology</a></li>
+                        <li class="mt-1">Pediatrics</a></li>
+                        <li class="mt-1">Emergency Care</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Contact us</h5>
+                        <p class="list-unstyled"><i class="fa-solid fa-map-pin"></i>  123,Health Street,Medical <br>
+                            City, Hyderabad - 500001</p>
+                        <p class="list-unstyled"><i class="fa-solid fa-phone"></i>  +91 9876543210</p>
+                        <p class="list-unstyled"><i class="fa-solid fa-envelope"></i>  medicare@gmail.com</p>
+                        <p class="list-unstyled"><i class="fa-solid fa-clock"></i>  Mon-Sun: 24/7 Open</p>
+
+                    </div>
+                <div class="text-center mt-4">
+                <p><i class="fa-solid fa-copyright"></i> 2026 Frontend HospitalManagement. All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

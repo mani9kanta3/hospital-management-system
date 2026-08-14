@@ -121,3 +121,83 @@
     color: #0d6efd;
     font-weight: bold;
 }
+
+.banner-icon{
+    font-size: 75px;
+    line-height: 1;
+}
+
+.page-path{
+    font-size: 15px;
+}
+
+.page-path a{
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.page-path a:hover{
+    text-decoration: underline;
+}
+
+.form-heading{
+    font-weight: bold;
+}
+
+.field-label{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group-text{
+    border-right: 0;
+}
+
+.input-group .form-control{
+    border-left: 0;
+}
+
+.input-group .form-select{
+    border-left: 0;
+}
+
+.form-control::placeholder{
+    font-size: 14px;
+    color: rgb(140, 140, 140);
+}
+
+.note-box{
+    background-color: #dceeff;
+    border-radius: 8px;
+}
+
+.note-text{
+    font-size: 14px;
+}
+
+.confirm-btn{
+    width: 230px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.info-icon{
+    background-color: #dceeff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.info-title{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.info-text{
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 0px;
+}
