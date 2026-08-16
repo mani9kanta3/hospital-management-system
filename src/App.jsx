@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './Navbar'
 import HomePage from './HomePage'
 import Footer from './Footer'
+import PatientRegistration from './PatientRegistration'
 
 function App() {
   return (
