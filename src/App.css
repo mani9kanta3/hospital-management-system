@@ -201,3 +201,71 @@
     color: rgb(88, 88, 88);
     margin-bottom: 0px;
 }
+
+.stat-label{
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 5px;
+}
+
+.stat-note{
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.stat-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.stat-blue{
+    background-color: #dceeff;
+    color: #0d6efd;
+}
+
+.stat-green{
+    background-color: #d7f5e3;
+    color: #198754;
+}
+
+.stat-orange{
+    background-color: #ffeed4;
+    color: #fd7e14;
+}
+
+.stat-purple{
+    background-color: #e9e2fb;
+    color: #6f42c1;
+}
+
+.hover-card{
+    transition: 0.3s;
+}
+
+.hover-card:hover{
+    box-shadow: 0px 8px 20px rgb(180, 180, 180) !important;
+}
+
+.action-card{
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.action-card:hover{
+    border-color: #0d6efd;
+    background-color: #f6faff;
+}
+
+.table-head{
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+
+.table-text{
+    font-size: 14px;
+}
