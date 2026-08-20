@@ -1,4 +1,15 @@
 import React from 'react'
+import doctorImg from './assets/doctor.png'
+import groupImg from './assets/group.png'
+import modernFacilities from './assets/modern facilities.png'
+import support247 from './assets/247 support.png'
+import trustedCare from './assets/trusted care.png'
+import generalTreatment from './assets/general treatment.png'
+import cardiology from './assets/cardiology.png'
+import neurology from './assets/neurology.png'
+import pediatrics from './assets/Pediatrics.png'
+import labaratoryTest from './assets/labaratory test.png'
+import emergencyCare from './assets/emergency care.png'
 
 function HomePage() {
   return (
@@ -16,7 +27,7 @@ function HomePage() {
                 </div>
             </div>
             <div class="col-6">
-                <img class="doctor-img" src="./doctor.png" alt="" width="90%" />
+                <img class="doctor-img" src={doctorImg} alt="" width="90%" />
             </div>
         </div>
     </div>
@@ -25,7 +36,7 @@ function HomePage() {
         <div class="row">
             <div class="col-3">
                 <div class="d-flex">
-                    <img class="me-2" src="./group.png" alt="" width="30%"/>
+                    <img class="me-2" src={groupImg} alt="" width="30%"/>
                     <div class="mt-2">
                         <h5 class="font-3rd-section mt-1">Experienced Doctors</h5>
                         <p class="text-3rd-section">100+ Expert Doctors</p>
@@ -34,7 +45,7 @@ function HomePage() {
             </div>
             <div class="col-3">
                 <div class="d-flex">
-                    <img class="me-2" src="./modern facilities.png" alt="" width="30%"/>
+                    <img class="me-2" src={modernFacilities} alt="" width="30%"/>
                     <div class="mt-2">
                         <h5 class="font-3rd-section mt-1">Modern Facilities</h5>
                         <p class="text-3rd-section">Advanced Technology</p>
@@ -43,7 +54,7 @@ function HomePage() {
             </div>
             <div class="col-3">
                 <div class="d-flex">
-                    <img class="me-2" src="./247 support.png" alt="" width="30%"/>
+                    <img class="me-2" src={support247} alt="" width="30%"/>
                     <div class="mt-2">
                         <h5 class="font-3rd-section mt-1">24/7 Support</h5>
                         <p class="text-3rd-section">Always Here For You</p>
@@ -52,7 +63,7 @@ function HomePage() {
             </div>
             <div class="col-3">
                 <div class="d-flex">
-                    <img class="me-2" src="./trusted care.png" alt="" width="30%"/>
+                    <img class="me-2" src={trustedCare} alt="" width="30%"/>
                     <div class="mt-2">
                         <h5 class="font-3rd-section mt-1">Trusted Care</h5>
                         <p class="text-3rd-section">Safe & Reliable</p>
@@ -68,7 +79,7 @@ function HomePage() {
         <div class="row row-cols-1 row-cols-md-6 g-4 mt-1">
         <div class="col">
             <div class="card h-100">
-            <img src="./general treatment.png" class="mx-auto d-block" alt="..." width="80%"/>
+            <img src={generalTreatment} class="mx-auto d-block" alt="..." width="80%"/>
             <div class="card-body">
                 <h5 class="card-title text-center">General Treatment</h5>
                 <p class="card-text text-center">Complete diagnosis and treatment for general health issues.</p>
@@ -77,7 +88,7 @@ function HomePage() {
         </div>
         <div class="col">
             <div class="card h-100">
-            <img src="./cardiology.png" class="mx-auto d-block" alt="..." width="80%"/>
+            <img src={cardiology} class="mx-auto d-block" alt="..." width="80%"/>
             <div class="card-body">
                 <h5 class="card-title text-center">Cardiology</h5>
                 <p class="card-text text-center">Advanced care for heart conditions and related diseases.</p>
@@ -86,7 +97,7 @@ function HomePage() {
         </div>
         <div class="col">
             <div class="card h-100">
-            <img src="./neurology.png" class="mx-auto d-block" alt="..." width="80%"/>
+            <img src={neurology} class="mx-auto d-block" alt="..." width="80%"/>
             <div class="card-body">
                 <h5 class="card-title text-center">Neurology</h5>
                 <p class="card-text text-center">Expert treatment for brain, spine and nervous system disorders.</p>
@@ -95,7 +106,7 @@ function HomePage() {
         </div>
         <div class="col">
             <div class="card h-100">
-            <img src="./Pediatrics.png" class="mx-auto d-block" alt="..." width="80%"/>
+            <img src={pediatrics} class="mx-auto d-block" alt="..." width="80%"/>
             <div class="card-body">
                 <h5 class="card-title text-center">Pediatrics</h5>
                 <p class="card-text text-center">Specialized healthcare for infants, children and adolescents.</p>
@@ -104,7 +115,7 @@ function HomePage() {
         </div>
         <div class="col">
             <div class="card h-100">
-            <img src="./labaratory test.png" class="mx-auto d-block" alt="..." width="80%"/>
+            <img src={labaratoryTest} class="mx-auto d-block" alt="..." width="80%"/>
             <div class="card-body">
                 <h5 class="card-title text-center">Laboratory Test</h5>
                 <p class="card-text text-center">Accurate and fast lab testing with advanced equipment.</p>
@@ -113,7 +124,7 @@ function HomePage() {
         </div>
         <div class="col">
             <div class="card h-100">
-            <img src="./emergency care.png" class="mx-auto d-block" alt="..." width="80%"/>
+            <img src={emergencyCare} class="mx-auto d-block" alt="..." width="80%"/>
             <div class="card-body">
                 <h5 class="card-title text-center">Emergency Care</h5>
                 <p class="card-text text-center">24/7 emergency services with quick and efficient response.</p>
@@ -241,7 +252,7 @@ function HomePage() {
         </div>
     </section>
     </div>
-    <div class="container patient-says-section mt-3">
+    <div class="container patient-says-section mt-3 mb-5">
         <section>
         <h6 class="text-center header">PATIENT SAYS</h6>
         <h2 class="text-center">What Our Patient Say</h2>
