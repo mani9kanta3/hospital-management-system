@@ -1,83 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./index.css";
+import "./contact.css";
 
 function Contact() {
   return (
     <>
-      {/* ================= NAVBAR ================= */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div className="container">
-
-          <Link className="navbar-brand fw-bold" to="/">
-            <i className="bi bi-hospital-fill text-primary fs-2"></i>{" "}
-            <span className="logo">MediCare</span>
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarNav">
-
-            <ul className="navbar-nav mx-auto">
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/doctors">
-                  Doctors
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/patients">
-                  Patients
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/appointments">
-                  Appointments
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/dashboard">
-                  Dashboard
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link active" to="/contact">
-                  Contact
-                </Link>
-              </li>
-
-            </ul>
-
-            <Link
-              to="/appointments"
-              className="btn btn-primary"
-            >
-              <i className="bi bi-calendar-check me-2"></i>
-              Book Appointment
-            </Link>
-
-          </div>
-        </div>
-      </nav>
-
-
       {/* ================= HERO ================= */}
       <section className="contact-hero">
 

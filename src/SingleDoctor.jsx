@@ -71,23 +71,6 @@ function SingleDoctor() {
   return (
     <div className="single-doctor-page">
 
-      {/* Breadcrumb */}
-
-      <div className="breadcrumb">
-
-        <Link to="/">Home</Link>
-
-        <span>›</span>
-
-        <Link to="/doctors">Doctors</Link>
-
-        <span>›</span>
-
-        <span>{doctor.name}</span>
-
-      </div>
-
-
       {/* Main Profile */}
 
       <div className="doctor-profile">
@@ -161,7 +144,7 @@ function SingleDoctor() {
           </p>
 
           <Link
-            to="/appointments"
+            to="/appointment"
             className="appointment-btn"
           >
             Book Appointment

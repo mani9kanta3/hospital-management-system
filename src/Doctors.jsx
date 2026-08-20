@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import "./index.css";
+import useDebounce from "./useDebounce";
+import "./doctor.css";
 
 function Doctors() {
   const doctors = [
@@ -62,106 +63,73 @@ function Doctors() {
     },
   ];
 
+  const [search, setSearch] = useState("");
+
+  const debouncedSearch = useDebounce(search, 500);
+
+  const filteredDoctors = useMemo(() => {
+    const text = debouncedSearch.toLowerCase();
+
+    return doctors.filter((doctor) => {
+      return (
+        doctor.name.toLowerCase().includes(text) ||
+        doctor.specialty.toLowerCase().includes(text)
+      );
+    });
+  }, [debouncedSearch]);
+
   return (
     <>
-      {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-
+      <div className="container-fluid second-section">
         <div className="container">
-
-          <Link className="navbar-brand fw-bold" to="/doctors">
-            <i className="bi bi-hospital-fill text-primary fs-2"></i>{" "}
-            <span className="logo">WellMed</span>
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarNav">
-
-            <ul className="navbar-nav mx-auto">
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link active" to="/doctors">
-                  Doctors
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/patients">
-                  Patients
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/appointments">
-                  Appointments
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/dashboard">
-                  Dashboard
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contact
-                </Link>
-              </li>
-
-            </ul>
-
-            <Link
-              to="/appointments"
-              className="btn btn-primary"
-            >
-              Book Appointment
-            </Link>
-
+          <div className="d-flex p-4">
+            <div className="banner-icon ms-3 me-4">
+              <i className="fa-solid fa-user-doctor text-primary"></i>
+            </div>
+            <div>
+              <h1>Our Specialist Doctors</h1>
+              <p className="offer-font">Meet our experienced healthcare professionals <br/> and book an appointment with them.</p>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
 
 
-      {/* Page Header */}
-      <section className="doctor-header">
+      <section className="container mt-4 mb-4">
 
-        <div className="container text-center">
+        <div className="row justify-content-center">
 
-          <h1>Our Specialist Doctors</h1>
+          <div className="col-md-8 col-lg-6">
 
-          <p>
-            Meet our experienced healthcare professionals.
-          </p>
+            <div className="input-group">
+
+              <span className="input-group-text bg-white">
+                <i className="fa-solid fa-magnifying-glass text-secondary"></i>
+              </span>
+
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search by doctor name or specialty"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+
+            </div>
+
+          </div>
 
         </div>
 
       </section>
 
-
-      {/* Doctors */}
       <section className="doctors">
 
         <div className="container">
 
-          {/* 4 doctors per row */}
           <div className="doctor-grid">
 
-            {doctors.map((doctor) => (
+            {filteredDoctors.map((doctor) => (
 
               <div
                 className="doctor-card"
@@ -171,7 +139,7 @@ function Doctors() {
                 <img
                   src={doctor.image}
                   alt={doctor.name}
-                  className="doctor-img"
+                  className="doctor-card-img"
                 />
 
                 <div className="doctor-content">
@@ -186,7 +154,6 @@ function Doctors() {
                     {doctor.experience}
                   </p>
 
-                  {/* Single Doctor Profile Link */}
                   <Link
                     to={`/doctors/${doctor.id}`}
                     className="btn btn-primary profile-btn"
@@ -201,6 +168,12 @@ function Doctors() {
             ))}
 
           </div>
+
+          {filteredDoctors.length === 0 && (
+            <p className="text-center info-text mt-4">
+              No doctors found for "{debouncedSearch}"
+            </p>
+          )}
 
         </div>
 

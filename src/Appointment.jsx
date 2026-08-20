@@ -11,9 +11,6 @@ function Appointment() {
                         </div>
                         <div>
                             <h1>Book an Appointment</h1>
-                            <p class="page-path"><a href="/">Home</a> <i class="fa-solid fa-angle-right"></i>
-                                <a href="#">Appointments</a> <i class="fa-solid fa-angle-right"></i>
-                                <span class="text-dark">Book Appointment</span></p>
                             <p class="offer-font">Fill in the details below to book an appointment <br/> with our specialist doctors.</p>
                         </div>
                     </div>

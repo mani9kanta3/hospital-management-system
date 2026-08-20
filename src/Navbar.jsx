@@ -30,10 +30,10 @@ function Navbar() {
                             <Link class="nav-link active" to='/'>Home</Link>
                         </li>
                         <li class="nav-item ms-3 me-3">
-                            <a class="nav-link active" href="#">Doctors</a>
+                            <Link class="nav-link active" to='/doctors'>Doctors</Link>
                         </li>
                         <li class="nav-item ms-3 me-3">
-                            <a class="nav-link active" href="#">Patients</a>
+                            <Link class="nav-link active" to='/patients'>Patients</Link>
                         </li>
                         <li class="nav-item ms-3 me-3">
                             <Link class="nav-link active" to='/appointment'>Appointments</Link>
@@ -42,7 +42,7 @@ function Navbar() {
                             <Link class="nav-link active" to='/dashboard'>Dashboard</Link>
                         </li>
                         <li class="nav-item ms-3 me-3">
-                            <a class="nav-link active" href="#">Contact</a>
+                            <Link class="nav-link active" to='/contact'>Contact</Link>
                         </li>
                     </ul>
 

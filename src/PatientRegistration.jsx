@@ -3,182 +3,258 @@ import React from 'react'
 function PatientRegistration() {
     return (
         <>
-    <div class="heading">
-        <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/9771/9771679.png" alt="" height="100px" width="100px"/>
-        </div>
-        <div class="txt">
-            <h1>Patient Registration</h1>
-            <p>Create your account to access our healthcare services<br/>and manage your appointments easily.</p>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row whole-container">
-            <div class="col-lg-8">
-                <div class="registration-card">
-                    <h3><i class="fa fa-user"></i> Personal Information</h3>
-                    <div class="row first-row">
-                        <div class="col-md-3">
-                            <label>Full Name</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter full name" />
+            <div class="container-fluid second-section">
+                <div class="container">
+                    <div class="d-flex p-4">
+                        <div class="banner-icon ms-3 me-4">
+                            <i class="fa-solid fa-user-plus text-primary"></i>
                         </div>
-                        <div class="col-md-3">
-                            <label>Date of Birth</label><span> *</span>
-                            <input type="date" class="pr" />
+                        <div>
+                            <h1>Patient Registration</h1>
+                            <p class="offer-font">Create your account to access our healthcare services <br/> and manage your appointments easily.</p>
                         </div>
-                        <div class="col-md-3">
-                            <label>Gender</label><span> *</span>
-                            <select class=" pr">
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>other</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label>Blood Group</label><span> *</span>
-                            <select class=" pr">
-                                <option>A+</option>
-                                <option>B+</option>
-                                <option>AB+</option>
-                                <option>O+</option>
-                                <option>A-</option>
-                                <option>B-</option>
-                                <option>AB-</option>
-                                <option>o-</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row second-row">
-                        <div class="col-md-4">
-                            <label>Phone Number</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter 10 digit mobile number" />
-                        </div>
-                        <div class="col-md-4">
-                            <label>Email Address</label><span> *</span>
-                            <input type="email" class="pr" placeholder="Enter Your Email" />
-                        </div>
-                        <div class="col-md-4">
-                            <label>Marital Status</label><span> *</span>
-                            <select class="pr">
-                                <option>Single</option>
-                                <option>Married</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="registration-card">
-                    <h3><i class="fa fa-map-marker"></i> Address Information</h3>
-                    <div class="row first-row">
-                        <div class="col-md-4">
-                            <label> Address Line 1</label><span> *</span>
-                            <input type="text" class="pr" placeholder="House no.,Building,Street" />
-                        </div>
-                        <div class="col-md-4">
-                            <label> Address Line 2</label>
-                            <input type="text" class="pr" placeholder="Landmark" />
-                        </div>
-                        <div class="col-md-4">
-                            <label>City</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter City" />
-                        </div>
-                    </div>
-                    <div class="row second-row">
-                        <div class="col-md-4">
-                            <label>State</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter State" />
-                        </div>
-                        <div class="col-md-4">
-                            <label>Pincode</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter Pincode" />
-                        </div>
-                        <div class="col-md-4">
-                            <label>Country</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter Country" />
-                        </div>
-                    </div>
-                </div>
-                <div class="registration-card">
-                    <h3><i class="fa fa-shield"></i> Medical Information</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label> Known Allergies</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter allergies (if any)"/>
-                        </div>
-                        <div class="col-md-4">
-                            <label>Existing Diseases</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter existing diseases (if any)"/>
-                        </div>
-                        <div class="col-md-4">
-                            <label>Regular Medication</label><span> *</span>
-                            <input type="text" class="pr" placeholder="Enter regular medication (if any)"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="registration-bottom">
-                    <div class="terms">
-                        <input type="checkbox" id="terms"/>
-                        <label>I agree to the<a href="#">Terms & Conditions</a>and<a href="#">Privacy Policy.</a>
-                        </label>
-                    </div>
-                    <div class="register-area">
-                        <button type="submit" class="register-button"><i class="fa fa-user"></i> Register Now</button>
-                        <p>Already have an account?<a href="#">Login here</a></p>
                     </div>
                 </div>
             </div>
-       
-            <div class="col-lg-4">
-                <div class="registration-cards">
-                    <h3><i class="fa fa-info-circle"></i>  Why Register?</h3>
-                    <div class="side-bar">
-                        <i class="fa fa-calendar"></i>
-                        <div>
-                            <h4>Easy Appointments</h4>
-                            <p>Book, reschedule and manage your appointments with ease.</p>
-                        </div>
-                    </div>
-                    <div class="side-bar">
-                        <i class="fa fa-history"></i>
-                        <div>
-                            <h4>Medical History</h4>
-                            <p>Keep your medical history secure and accessible.</p>
-                        </div>
-                    </div>
-                    <div class="side-bar">
-                        <i class="fa fa-bell"></i>
-                        <div>
-                            <h4>Reminders</h4>
-                            <p>Receive timely reminders for your appointments and medications.</p>
-                        </div>
-                    </div>
-                    <div class="side-bar">
-                        <i class="fa fa-lock"></i>
-                        <div>
-                            <h4>Secure & Private</h4>
-                            <p>Your data is safe with us.we ensure complete privacy and security.</p>
-                        </div>
-                    </div>
-                    <div class="side-bar">
-                        <i class="fa fa-file-text-o"></i>
-                        <div>
-                            <h4>Reports Access</h4>
-                            <p>Access your lab reports and prescriptions anytime, anywhere.</p>
-                        </div>
-                    </div>    
-                    <div class="side-bar">
-                        <i class="fa fa-headphones"></i>
-                        <div>
-                            <h4>Need Help?</h4>
-                            <p>Call us at +91 9876543210 or email medicare@gmail.com .</p>
-                        </div>                
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    </>
-  )
+            <div class="container mt-5 mb-5">
+                <div class="row g-4">
+
+                    <div class="col-lg-8">
+                        <div class="bg-white shadow p-4 corners">
+                            <h5 class="form-heading"><i class="fa-solid fa-user text-primary me-2"></i> Personal Information</h5>
+                            <hr />
+                            <form>
+                                <div class="row mt-4">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label field-label">Full Name <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-user text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter full name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label field-label">Date of Birth <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-calendar-days text-secondary"></i></span>
+                                            <input type="date" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label field-label">Gender <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-venus-mars text-secondary"></i></span>
+                                            <select class="form-select">
+                                                <option>-- Select Gender --</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label field-label">Blood Group <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-droplet text-secondary"></i></span>
+                                            <select class="form-select">
+                                                <option>-- Select Blood Group --</option>
+                                                <option>A+</option>
+                                                <option>B+</option>
+                                                <option>AB+</option>
+                                                <option>O+</option>
+                                                <option>A-</option>
+                                                <option>B-</option>
+                                                <option>AB-</option>
+                                                <option>O-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Phone Number <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-phone text-secondary"></i></span>
+                                            <input type="tel" class="form-control" placeholder="Enter 10 digit mobile number" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Email Address <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-envelope text-secondary"></i></span>
+                                            <input type="email" class="form-control" placeholder="Enter your email" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Marital Status <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-ring text-secondary"></i></span>
+                                            <select class="form-select">
+                                                <option>-- Select Status --</option>
+                                                <option>Single</option>
+                                                <option>Married</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h5 class="form-heading mt-4"><i class="fa-solid fa-location-dot text-primary me-2"></i> Address Information</h5>
+                                <hr />
+                                <div class="row mt-4">
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Address Line 1 <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-house text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="House no., Building, Street" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Address Line 2</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-map-pin text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Landmark" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">City <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-city text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter city" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">State <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-map text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter state" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Pincode <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-hashtag text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter pincode" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Country <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-globe text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter country" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h5 class="form-heading mt-4"><i class="fa-solid fa-shield-heart text-primary me-2"></i> Medical Information</h5>
+                                <hr />
+                                <div class="row mt-4">
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Known Allergies</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-triangle-exclamation text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter allergies (if any)" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Existing Diseases</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-stethoscope text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter existing diseases (if any)" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label class="form-label field-label">Regular Medication</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white"><i class="fa-solid fa-pills text-secondary"></i></span>
+                                            <input type="text" class="form-control" placeholder="Enter regular medication (if any)" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="note-box p-3 mt-3">
+                                    <p class="mb-0 note-text">
+                                        <input type="checkbox" id="terms" class="me-2" />
+                                        I agree to the <a href="#" class="text-primary">Terms &amp; Conditions</a> and <a href="#" class="text-primary">Privacy Policy</a>.
+                                    </p>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn btn-primary confirm-btn"><i class="fa-solid fa-user-plus me-2"></i> Register Now</button>
+                                    <p class="info-text mt-3 mb-0">Already have an account? <a href="/login" class="text-primary">Login here</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="bg-white shadow p-4 corners">
+                            <h5 class="form-heading"><i class="fa-solid fa-circle-info text-primary me-2"></i> Why Register?</h5>
+                            <hr />
+                            <div class="d-flex mt-4">
+                                <div class="info-icon me-3">
+                                    <i class="fa-solid fa-calendar-days text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-primary info-title">Easy Appointments</h6>
+                                    <p class="info-text">Book, reschedule and manage your appointments with ease.</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fa-solid fa-clock-rotate-left text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-primary info-title">Medical History</h6>
+                                    <p class="info-text">Keep your medical history secure and accessible.</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fa-solid fa-bell text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-primary info-title">Reminders</h6>
+                                    <p class="info-text">Receive timely reminders for your appointments and medications.</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fa-solid fa-lock text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-primary info-title">Secure &amp; Private</h6>
+                                    <p class="info-text">Your data is safe with us. We ensure complete privacy and security.</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fa-solid fa-file-lines text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-primary info-title">Reports Access</h6>
+                                    <p class="info-text">Access your lab reports and prescriptions anytime, anywhere.</p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex">
+                                <div class="info-icon me-3">
+                                    <i class="fa-solid fa-headset text-primary"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-primary info-title">Need Help?</h6>
+                                    <p class="info-text mb-0">Call us at +91 98765 43210</p>
+                                    <p class="info-text">or email medicare@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </>
+    )
 }
 
 export default PatientRegistration

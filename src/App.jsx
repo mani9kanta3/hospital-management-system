@@ -10,6 +10,9 @@ import Appointment from './Appointment'
 import Dashboard from './Dashboard'
 import ProtectedRoute from './ProtectedRoute'
 import ForgotPassword from './ForgotPassword'
+import Doctors from './Doctors'
+import SingleDoctor from './SingleDoctor'
+import Contact from './Contact'
 
 function App() {
   return (
@@ -20,6 +23,10 @@ function App() {
       <Route path='/' element={<HomePage/>} />
       <Route path='/login' element={<LoginPage/>} />
       <Route path='/forgot-password' element={<ForgotPassword/>} />
+      <Route path='/doctors' element={<Doctors/>} />
+      <Route path='/doctors/:id' element={<SingleDoctor/>} />
+      <Route path='/patients' element={<PatientRegistration/>} />
+      <Route path='/contact' element={<Contact/>} />
       <Route path='/appointment' element={<ProtectedRoute><Appointment/></ProtectedRoute>}/>
       <Route path='/dashboard' element={<ProtectedRoute><Dashboard/></ProtectedRoute>}/>
     </Routes>

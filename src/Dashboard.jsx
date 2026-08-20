@@ -11,8 +11,6 @@ function Dashboard() {
                 </div>
                 <div>
                     <h1>Dashboard</h1>
-                    <p class="page-path"><a href="./index.html">Home</a> <i class="fa-solid fa-angle-right"></i>
-                        <span class="text-dark">Dashboard</span></p>
                     <p class="offer-font">A quick overview of patients, appointments <br/> and doctors in our hospital.</p>
                 </div>
             </div>

@@ -1,0 +1,276 @@
+/* ================= HERO ================= */
+
+.contact-hero{
+    background-color: #dceeff;
+    padding: 40px 0px;
+}
+
+.contact-hero h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #042047;
+}
+
+.contact-hero p{
+    font-size: 18px;
+    color: rgb(88, 88, 88);
+}
+
+.hospital-image{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.breadcrumb-contact{
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+
+.breadcrumb-contact a{
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.breadcrumb-contact a:hover{
+    text-decoration: underline;
+}
+
+.breadcrumb-contact span{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+/* ================= SECTION ================= */
+
+.contact-section{
+    padding: 40px 0px;
+}
+
+
+/* ================= CARDS ================= */
+
+.contact-card,
+.small-contact-card{
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    padding: 24px;
+    height: 100%;
+}
+
+.contact-card h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #042047;
+    margin-bottom: 10px;
+}
+
+.small-contact-card h4{
+    font-size: 17px;
+    font-weight: bold;
+    color: #042047;
+    margin-bottom: 10px;
+}
+
+.small-contact-card p{
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+
+.section-line{
+    width: 60px;
+    height: 3px;
+    background-color: #0d6efd;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.contact-description{
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 20px;
+}
+
+
+/* ================= FORM ================= */
+
+.contact-card label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.contact-card label span{
+    color: #dc3545;
+}
+
+.input-box{
+    position: relative;
+}
+
+.input-box i{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: rgb(140, 140, 140);
+}
+
+.input-box .form-control{
+    padding-left: 38px;
+}
+
+.message-box textarea{
+    font-size: 14px;
+}
+
+.send-btn{
+    width: 230px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* ================= CONTACT INFO ================= */
+
+.contact-info{
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.contact-info h6{
+    font-size: 15px;
+    font-weight: bold;
+    color: #042047;
+    margin-bottom: 2px;
+}
+
+.contact-info p{
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 0px;
+}
+
+.contact-info .info-icon{
+    color: #0d6efd;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+
+
+/* ================= LOCATION ================= */
+
+.location-card{
+    margin-top: 24px;
+}
+
+.map-box{
+    background-color: #dceeff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.map-box i{
+    font-size: 40px;
+    color: #0d6efd;
+}
+
+.map-box p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #042047;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social-icons a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dceeff;
+    color: #0d6efd;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.social-icons a:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+
+
+/* ================= WORKING HOURS ================= */
+
+.working-hours{
+    display: flex;
+}
+
+.clock-icon{
+    background-color: #dceeff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #0d6efd;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+
+.hours-list{
+    width: 100%;
+}
+
+.hours-list p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 6px;
+}
+
+.hours-list b{
+    color: #042047;
+}
+
+.emergency-text b{
+    color: #198754;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px){
+    .hospital-image{
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    .location-card{
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 575px){
+    .contact-hero h1{
+        font-size: 30px;
+    }
+
+    .contact-hero p{
+        font-size: 16px;
+    }
+
+    .send-btn{
+        width: 100%;
+    }
+}
