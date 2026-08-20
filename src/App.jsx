@@ -23,9 +23,9 @@ function App() {
       <Route path='/' element={<HomePage/>} />
       <Route path='/login' element={<LoginPage/>} />
       <Route path='/forgot-password' element={<ForgotPassword/>} />
-      <Route path='/doctors' element={<Doctors/>} />
-      <Route path='/doctors/:id' element={<SingleDoctor/>} />
-      <Route path='/registration' element={<PatientRegistration/>} />
+      <Route path='/doctors' element={<ProtectedRoute><Doctors/></ProtectedRoute>} />
+      <Route path='/doctors/:id' element={<ProtectedRoute><SingleDoctor/></ProtectedRoute>} />
+      <Route path='/registration' element={<ProtectedRoute><PatientRegistration/></ProtectedRoute>} />
       <Route path='/contact' element={<Contact/>} />
       <Route path='/appointment' element={<ProtectedRoute><Appointment/></ProtectedRoute>}/>
       <Route path='/dashboard' element={<ProtectedRoute><Dashboard/></ProtectedRoute>}/>
