@@ -12,7 +12,7 @@ function Navbar() {
     }
 
     return (
-        <nav class="navbar navbar-expand-lg navbar-light p-4">
+        <nav class="navbar navbar-expand-xl navbar-light p-4">
             <div class="container-fluid">
                 <Link class="navbar-brand d-flex align-items-center" to='/'>
                     <img src={hospLogo} alt="MediCare Hospital" class="brand-logo me-2" />
@@ -25,28 +25,25 @@ function Navbar() {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-title">
-                        <li class="nav-item ms-3 me-3">
-                            <Link class="nav-link active" to='/'>Home</Link>
+                    <ul class="navbar-nav ms-auto me-3 mb-2 mb-xl-0 nav-title">
+                        <li class="nav-item ms-2 me-2">
+                            <Link class="nav-link active text-nowrap" to='/'>Home</Link>
                         </li>
-                        <li class="nav-item ms-3 me-3">
-                            <Link class="nav-link active" to='/doctors'>Doctors</Link>
+                        <li class="nav-item ms-2 me-2">
+                            <Link class="nav-link active text-nowrap" to='/doctors'>Doctors</Link>
                         </li>
-                        <li class="nav-item ms-3 me-3">
-                            <Link class="nav-link active" to='/patients'>Patients</Link>
+                        <li class="nav-item ms-2 me-2">
+                            <Link class="nav-link active text-nowrap" to='/registration'>New Registration</Link>
                         </li>
-                        <li class="nav-item ms-3 me-3">
-                            <Link class="nav-link active" to='/appointment'>Appointments</Link>
+                        <li class="nav-item ms-2 me-2">
+                            <Link class="nav-link active text-nowrap" to='/dashboard'>Dashboard</Link>
                         </li>
-                        <li class="nav-item ms-3 me-3">
-                            <Link class="nav-link active" to='/dashboard'>Dashboard</Link>
-                        </li>
-                        <li class="nav-item ms-3 me-3">
-                            <Link class="nav-link active" to='/contact'>Contact</Link>
+                        <li class="nav-item ms-2 me-2">
+                            <Link class="nav-link active text-nowrap" to='/contact'>Contact</Link>
                         </li>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex align-items-center gap-3 me-2">
                         <Link class="btn btn-primary text-nowrap" to='/appointment'>Book Appointment</Link>
                         {
                             fetchuser ? (

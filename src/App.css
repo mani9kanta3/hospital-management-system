@@ -59,8 +59,10 @@
 }
 
 .doctor-image{
-    height: 180px;
+    height: 240px;
     object-fit: cover;
+    object-position: top center;
+    background-color: #f4f8fc;
 }
 
 .designation{
@@ -281,4 +283,121 @@
 .brand-logo{
     height: 48px;
     width: auto;
+}
+
+/* ================= RESPONSIVE ================= */
+/* laptop screens: tighten the navbar so everything fits */
+@media (max-width: 1399px){
+    .navbar-brand{
+        margin-left: 20px;
+    }
+
+    .brand-logo{
+        height: 40px;
+    }
+
+    .brand-name{
+        font-size: 22px;
+    }
+
+    .brand-sub{
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    .nav-link{
+        font-size: 15px;
+    }
+}
+
+/* laptop and below */
+@media (max-width: 1199px){
+
+    .button-view{
+        width: 100%;
+    }
+
+    .quality-font{
+        font-size: 44px;
+    }
+
+    .doctor-img{
+        margin-left: 0px;
+    }
+}
+
+/* tablet */
+@media (max-width: 991px){
+    .navbar-brand{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .quality-font{
+        font-size: 38px;
+    }
+
+    .offer-font{
+        font-size: 16px;
+    }
+
+    .doctor-img{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .third-section{
+        margin-top: 20px;
+    }
+
+    .banner-icon{
+        font-size: 55px;
+    }
+
+    .book-btn{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* mobile */
+@media (max-width: 575px){
+    .quality-font{
+        font-size: 30px;
+    }
+
+    .offer-font{
+        font-size: 15px;
+    }
+
+    .custom-btn{
+        width: 100%;
+    }
+
+    .book-btn{
+        width: 100%;
+        margin-right: 0px !important;
+        font-size: 15px;
+    }
+
+    .button-view{
+        width: 100%;
+    }
+
+    .confirm-btn{
+        width: 100%;
+    }
+
+    .banner-icon{
+        font-size: 45px;
+    }
+
+    .number{
+        font-size: 22px;
+    }
+
+    .number-text{
+        font-size: 14px;
+    }
 }

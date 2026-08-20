@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import hospLogo from './assets/hosp-logo.png'
 
 function Footer() {
@@ -22,11 +23,11 @@ function Footer() {
               <div class="col-lg-3 col-md-6">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
-                  <li><a href="">Home</a></li>
-                  <li class="mt-1"><a href="">About us</a></li>
-                  <li class="mt-1"><a href="">Doctors</a></li>
-                  <li class="mt-1"><a href="">Appointments</a></li>
-                  <li class="mt-1"><a href="">Contact us</a></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li class="mt-1"><Link to="/registration">New Registration</Link></li>
+                  <li class="mt-1"><Link to="/doctors">Doctors</Link></li>
+                  <li class="mt-1"><Link to="/appointment">Appointments</Link></li>
+                  <li class="mt-1"><Link to="/contact">Contact us</Link></li>
                 </ul>
               </div>
 

@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import useFetch from './useFetch'
+import doctorsUrl from './doctors.json?url'
+import doctorImages from './doctorImages'
 import doctorImg from './assets/doctor.png'
 import groupImg from './assets/group.png'
 import modernFacilities from './assets/modern facilities.png'
@@ -12,6 +16,10 @@ import labaratoryTest from './assets/labaratory test.png'
 import emergencyCare from './assets/emergency care.png'
 
 function HomePage() {
+  const { data } = useFetch(doctorsUrl)
+  const doctors = Array.isArray(data) ? data : []
+  const topDoctors = doctors.slice(0, 4)
+
   return (
     <>
         <div class="container-fluid second-section">
@@ -138,59 +146,24 @@ function HomePage() {
         <h6 class="text-center header">OUR DOCTORS</h6>
         <h2 class="text-center">Meet Our Expert Doctors</h2>
         <div class="container-fluid mt-5">
-            <div class="row mb-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm border-1 rounded-4">
-                        <img src="https://media.easy-peasy.ai/4213a5f1-2a75-41b3-91ca-76c9d8d4cff8/736d0655-3c7c-41c8-8288-4aaebcc9b2fd_medium.webp"
-                            class="card-img-top doctor-image" alt="anjali" width="100%" height="70%"/>
-                        <div class="card-body">
-                            <h5>Dr. Anjali Sharma</h5>
-                            <p class="mb-1 designation">Cardiologist</p>
-                            <p class="mb-1 designation">10+ Years Experience</p>
-                            <p class="text-warning">★★★★★</p>
-                            <button class="btn btn-primary button-view" type="submit">View Profile</button>
+            <div class="row mb-4 g-4">
+                {
+                    topDoctors.map((doctor) => (
+                        <div class="col-lg-3 col-md-6" key={doctor.id}>
+                            <div class="card h-100 shadow-sm border-1 rounded-4">
+                                <img src={doctorImages[doctor.id]}
+                                    class="card-img-top doctor-image" alt={doctor.name} />
+                                <div class="card-body">
+                                    <h5>{doctor.name}</h5>
+                                    <p class="mb-1 designation">{doctor.specialization}</p>
+                                    <p class="mb-1 designation">{doctor.experience} Experience</p>
+                                    <p class="text-warning">★★★★★</p>
+                                    <Link to={`/doctors/${doctor.id}`} class="btn btn-primary button-view d-inline-flex align-items-center justify-content-center">View Profile</Link>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm border-1 rounded-4">
-                        <img src="https://img.freepik.com/premium-photo/default-striking-portrait-young-male-doctor-his-arms_992212-246886.jpg"
-                            class="card-img-top doctor-image" alt="anjali"/>
-                        <div class="card-body">
-                            <h5>Dr. Rahul Verma</h5>
-                            <p class="mb-1 designation">Neurologist</p>
-                            <p class="mb-1 designation">8+ Years Experience</p>
-                            <p class="text-warning">★★★★★</p>
-                            <button class="btn btn-primary button-view" type="submit">View Profile</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm border-1 rounded-4">
-                        <img src="https://imgcdn.stablediffusionweb.com/2025/7/3/1efa023c-3d64-4cf4-9542-11224eba8341.jpg"
-                            class="card-img-top doctor-image" alt="anjali"/>
-                        <div class="card-body">
-                            <h5>Dr. Priya patel</h5>
-                            <p class="mb-1 designation">Pediatrician</p>
-                            <p class="mb-1 designation">6+ Years Experience</p>
-                            <p class="text-warning">★★★★★</p>
-                            <button class="btn btn-primary button-view" type="submit">View Profile</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card h-100 shadow-sm border-1 rounded-4">
-                        <img src="https://img.freepik.com/premium-photo/professional-doctor-portrait-showcasing-expertise-compassion-healthcare_1204564-59616.jpg"
-                            class="card-img-top doctor-image" alt="anjali"/>
-                        <div class="card-body">
-                            <h5>Dr. Amith Singh</h5>
-                            <p class="mb-1 designation">Orthopedic</p>
-                            <p class="mb-1 designation">10+ Years Experience</p>
-                            <p class="text-warning">★★★★★</p>
-                            <button class="btn btn-primary button-view" type="submit">View Profile</button>
-                        </div>
-                    </div>
-                </div>
+                    ))
+                }
             </div>
             <div class="text-center">
                 <button class="btn btn-outline-primary button-view mt-3 mb-4">View All Doctors</button>
