@@ -1,0 +1,292 @@
+.single-doctor-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 30px 3%;
+  color: #172554;
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #475569;
+}
+
+.breadcrumb a:hover {
+  color: #2563eb;
+}
+
+
+/* Main Profile */
+
+.doctor-profile {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 290px 1fr 390px;
+  gap: 45px;
+  align-items: center;
+}
+
+
+/* Doctor Image */
+
+.doctor-profile-image img {
+  width: 290px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #eef2f7;
+}
+
+
+/* Main Details */
+
+.doctor-main-details h1 {
+  font-size: 32px;
+  margin: 0 0 10px;
+  color: #0f2557;
+}
+
+.doctor-main-details h2 {
+  color: #2563eb;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.qualification {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+.experience {
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.doctor-main-details hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 28px 0;
+}
+
+
+/* Info Rows */
+
+.doctor-info-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 18px 0;
+}
+
+.doctor-info-row span {
+  font-size: 20px;
+}
+
+.doctor-info-row p {
+  margin: 0;
+  color: #334155;
+  font-size: 16px;
+}
+
+
+/* Appointment Box */
+
+.appointment-box {
+  border: 1px solid #dbe2ea;
+  border-radius: 12px;
+  padding: 35px;
+}
+
+.appointment-box h2 {
+  color: #111827;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.appointment-box p {
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.appointment-btn {
+  display: block;
+  background: #155eef;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.appointment-btn:hover {
+  background: #0d4ed8;
+}
+
+
+/* Bottom Section */
+
+.doctor-details-section {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 45px;
+}
+
+.doctor-details-section h2 {
+  font-size: 21px;
+  color: #0f2557;
+  margin-top: 0;
+}
+
+
+/* About */
+
+.about-doctor {
+  padding-right: 30px;
+  border-right: 1px solid #e2e8f0;
+}
+
+.about-doctor > p {
+  color: #475569;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+
+/* Detail Rows */
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  padding: 18px 0;
+  border-top: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+.detail-row strong {
+  color: #172554;
+}
+
+
+/* Specialization */
+
+.specialization-section ul {
+  padding-left: 22px;
+  color: #475569;
+  line-height: 2;
+}
+
+.education-title {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 22px;
+  margin-top: 25px !important;
+}
+
+.education-item {
+  border-top: 1px solid #e2e8f0;
+  padding: 18px 0;
+  color: #475569;
+}
+
+
+/* Loading */
+
+.doctor-loading {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #2563eb;
+}
+
+
+/* Error */
+
+.doctor-error {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.doctor-error h2 {
+  color: #dc2626;
+}
+
+.doctor-error a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+
+  .doctor-profile {
+    grid-template-columns: 250px 1fr;
+  }
+
+  .appointment-box {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .single-doctor-page {
+    padding: 20px;
+  }
+
+  .doctor-profile {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .doctor-profile-image img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .doctor-details-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-doctor {
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+}
