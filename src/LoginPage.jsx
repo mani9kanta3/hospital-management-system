@@ -52,7 +52,7 @@ function LoginPage() {
                         </form>
 
                         <p class="info-text text-center mt-4 mb-0">
-                            Don't have an account? <a href="#" class="text-primary">Sign Up</a>
+                            Don't have an account? <Link to='/signup' class="text-primary">Sign Up</Link>
                         </p>
 
                     </div>

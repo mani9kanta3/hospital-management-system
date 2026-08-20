@@ -10,6 +10,7 @@ import Appointment from './Appointment'
 import Dashboard from './Dashboard'
 import ProtectedRoute from './ProtectedRoute'
 import ForgotPassword from './ForgotPassword'
+import SignupPage from './SignupPage'
 import Doctors from './Doctors'
 import SingleDoctor from './SingleDoctor'
 import Contact from './Contact'
@@ -23,6 +24,7 @@ function App() {
       <Route path='/' element={<HomePage/>} />
       <Route path='/login' element={<LoginPage/>} />
       <Route path='/forgot-password' element={<ForgotPassword/>} />
+      <Route path='/signup' element={<SignupPage/>} />
       <Route path='/doctors' element={<ProtectedRoute><Doctors/></ProtectedRoute>} />
       <Route path='/doctors/:id' element={<ProtectedRoute><SingleDoctor/></ProtectedRoute>} />
       <Route path='/registration' element={<ProtectedRoute><PatientRegistration/></ProtectedRoute>} />

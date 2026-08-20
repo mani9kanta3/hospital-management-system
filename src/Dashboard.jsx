@@ -5,7 +5,7 @@ import doctorImages from './doctorImages'
 function Dashboard() {
   return (
     <>
-    <div class="container-fluid heading-section">
+    <div class="container-fluid second-section">
         <div class="container">
             <div class="d-flex p-4">
                 <div class="banner-icon ms-3 me-4">
@@ -13,8 +13,6 @@ function Dashboard() {
                 </div>
                 <div>
                     <h1>Dashboard</h1>
-                    <p class="page-path"><a href="./index.html">Home</a> <i class="fa-solid fa-angle-right"></i>
-                        <span class="text-dark">Dashboard</span></p>
                     <p class="offer-font">A quick overview of patients, appointments <br/> and doctors in our hospital.</p>
                 </div>
             </div>
@@ -23,7 +21,7 @@ function Dashboard() {
     <div class="container mt-5 kpi-section">
         <div class="row g-4">
             <div class="col-lg-3 col-md-6">
-                <div class="bg-white shadow p-4 corners hover-card">
+                <div class="bg-white shadow p-4 corners">
                     <div class="d-flex justify-content-between">
                         <div>
                             <p class="stat-label">Total Patients</p>
@@ -37,7 +35,7 @@ function Dashboard() {
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="bg-white shadow p-4 corners hover-card">
+                <div class="bg-white shadow p-4 corners">
                     <div class="d-flex justify-content-between">
                         <div>
                             <p class="stat-label">Appointments Today</p>
@@ -51,7 +49,7 @@ function Dashboard() {
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="bg-white shadow p-4 corners hover-card">
+                <div class="bg-white shadow p-4 corners">
                     <div class="d-flex justify-content-between">
                         <div>
                             <p class="stat-label">Total Doctors</p>
@@ -65,7 +63,7 @@ function Dashboard() {
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="bg-white shadow p-4 corners hover-card">
+                <div class="bg-white shadow p-4 corners">
                     <div class="d-flex justify-content-between">
                         <div>
                             <p class="stat-label">Departments</p>
@@ -83,7 +81,7 @@ function Dashboard() {
     <div class="container mt-4 mb-5 main-section">
         <div class="row g-4">
             <div class="col-lg-8">
-                <div class="bg-white shadow p-4 corners hover-card">
+                <div class="bg-white shadow p-4 corners">
                     <h5 class="form-heading"><i class="fa-solid fa-clock-rotate-left text-primary me-2"></i> Recent Appointments</h5>
                     <hr/>
                     <table class="table table-hover align-middle mt-3">
@@ -140,7 +138,7 @@ function Dashboard() {
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="bg-white shadow p-4 corners hover-card">
+                <div class="bg-white shadow p-4 corners">
                     <h5 class="form-heading"><i class="fa-solid fa-user-doctor text-primary me-2"></i> Available Doctors</h5>
                     <hr/>
                     <div class="d-flex mt-4">
