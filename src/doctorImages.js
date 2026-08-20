@@ -10,8 +10,8 @@ const doctorImages = {
   1: doc1,
   2: doc2,
   3: doc3,
-  4: doc4,
-  5: doc5,
+  4: doc5,
+  5: doc4,
   6: doc6
 };
 

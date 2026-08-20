@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import doctorImages from './doctorImages'
 
 function Dashboard() {
   return (
@@ -97,35 +99,35 @@ function Dashboard() {
                         <tbody>
                             <tr>
                                 <td class="table-text">Ravi Kumar</td>
-                                <td class="table-text">Dr. Anjali Sharma</td>
+                                <td class="table-text">Dr. Arjun Mehta</td>
                                 <td class="table-text">Cardiology</td>
                                 <td class="table-text">09:00 AM</td>
                                 <td><span class="badge bg-success">Confirmed</span></td>
                             </tr>
                             <tr>
                                 <td class="table-text">Sneha Verma</td>
-                                <td class="table-text">Dr. Rahul Verma</td>
+                                <td class="table-text">Dr. Priya Sharma</td>
                                 <td class="table-text">Neurology</td>
                                 <td class="table-text">10:30 AM</td>
                                 <td><span class="badge bg-warning text-dark">Pending</span></td>
                             </tr>
                             <tr>
                                 <td class="table-text">Arjun Mehta</td>
-                                <td class="table-text">Dr. Priya Patel</td>
+                                <td class="table-text">Dr. Rahul Verma</td>
                                 <td class="table-text">Pediatrics</td>
                                 <td class="table-text">11:15 AM</td>
                                 <td><span class="badge bg-success">Confirmed</span></td>
                             </tr>
                             <tr>
                                 <td class="table-text">Kavya Reddy</td>
-                                <td class="table-text">Dr. Amith Singh</td>
+                                <td class="table-text">Dr. Sneha Reddy</td>
                                 <td class="table-text">Orthopedic</td>
                                 <td class="table-text">02:00 PM</td>
                                 <td><span class="badge bg-danger">Cancelled</span></td>
                             </tr>
                             <tr>
                                 <td class="table-text">Mohan Rao</td>
-                                <td class="table-text">Dr. Anjali Sharma</td>
+                                <td class="table-text">Dr. Arjun Mehta</td>
                                 <td class="table-text">Cardiology</td>
                                 <td class="table-text">04:30 PM</td>
                                 <td><span class="badge bg-success">Confirmed</span></td>
@@ -133,7 +135,7 @@ function Dashboard() {
                         </tbody>
                     </table>
                     <div class="text-center mt-3">
-                        <button class="btn btn-outline-primary">View All Appointments</button>
+                        <Link to='/appointment' class="btn btn-outline-primary">View All Appointments</Link>
                     </div>
                 </div>
             </div>
@@ -142,41 +144,41 @@ function Dashboard() {
                     <h5 class="form-heading"><i class="fa-solid fa-user-doctor text-primary me-2"></i> Available Doctors</h5>
                     <hr/>
                     <div class="d-flex mt-4">
-                        <img src="https://media.easy-peasy.ai/4213a5f1-2a75-41b3-91ca-76c9d8d4cff8/736d0655-3c7c-41c8-8288-4aaebcc9b2fd_medium.webp"
+                        <img src={doctorImages[1]}
                             class="rounded-circle profile-img me-3" alt=""/>
                         <div>
-                            <h6 class="info-title text-dark">Dr. Anjali Sharma</h6>
-                            <p class="info-text">Cardiologist</p>
+                            <h6 class="info-title text-dark">Dr. Arjun Mehta</h6>
+                            <p class="info-text">Cardiology</p>
                         </div>
                         <span class="badge bg-success ms-auto align-self-center">Available</span>
                     </div>
                     <hr/>
                     <div class="d-flex">
-                        <img src="https://img.freepik.com/premium-photo/default-striking-portrait-young-male-doctor-his-arms_992212-246886.jpg"
+                        <img src={doctorImages[2]}
                             class="rounded-circle profile-img me-3" alt=""/>
                         <div>
-                            <h6 class="info-title text-dark">Dr. Rahul Verma</h6>
-                            <p class="info-text">Neurologist</p>
+                            <h6 class="info-title text-dark">Dr. Priya Sharma</h6>
+                            <p class="info-text">Neurology</p>
                         </div>
                         <span class="badge bg-secondary ms-auto align-self-center">In Surgery</span>
                     </div>
                     <hr/>
                     <div class="d-flex">
-                        <img src="https://imgcdn.stablediffusionweb.com/2025/7/3/1efa023c-3d64-4cf4-9542-11224eba8341.jpg"
+                        <img src={doctorImages[3]}
                             class="rounded-circle profile-img me-3" alt=""/>
                         <div>
-                            <h6 class="info-title text-dark">Dr. Priya Patel</h6>
-                            <p class="info-text">Pediatrician</p>
+                            <h6 class="info-title text-dark">Dr. Rahul Verma</h6>
+                            <p class="info-text">Orthopedics</p>
                         </div>
                         <span class="badge bg-success ms-auto align-self-center">Available</span>
                     </div>
                     <hr/>
                     <div class="d-flex">
-                        <img src="https://img.freepik.com/premium-photo/professional-doctor-portrait-showcasing-expertise-compassion-healthcare_1204564-59616.jpg"
+                        <img src={doctorImages[4]}
                             class="rounded-circle profile-img me-3" alt=""/>
                         <div>
-                            <h6 class="info-title text-dark">Dr. Amith Singh</h6>
-                            <p class="info-text">Orthopedic</p>
+                            <h6 class="info-title text-dark">Dr. Sneha Reddy</h6>
+                            <p class="info-text">Pediatrics</p>
                         </div>
                         <span class="badge bg-success ms-auto align-self-center">Available</span>
                     </div>
@@ -190,7 +192,7 @@ function Dashboard() {
             <hr/>
             <div class="row g-4 mt-1">
                 <div class="col-lg-3 col-md-6">
-                    <a href="#" class="action-card h-100 d-flex align-items-center p-3">
+                    <Link to='/registration' class="action-card h-100 d-flex align-items-center p-3">
                         <div class="stat-icon stat-blue me-3">
                             <i class="fa-solid fa-user-plus"></i>
                         </div>
@@ -198,10 +200,10 @@ function Dashboard() {
                             <h6 class="info-title text-dark">Add New Patient</h6>
                             <p class="info-text">Register a new patient</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="./appointment.html" class="action-card h-100 d-flex align-items-center p-3">
+                    <Link to='/appointment' class="action-card h-100 d-flex align-items-center p-3">
                         <div class="stat-icon stat-green me-3">
                             <i class="fa-solid fa-calendar-plus"></i>
                         </div>
@@ -209,29 +211,29 @@ function Dashboard() {
                             <h6 class="info-title text-dark">Book Appointment</h6>
                             <p class="info-text">Schedule new appointment</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="#" class="action-card h-100 d-flex align-items-center p-3">
+                    <Link to='/doctors' class="action-card h-100 d-flex align-items-center p-3">
                         <div class="stat-icon stat-orange me-3">
                             <i class="fa-solid fa-users"></i>
                         </div>
                         <div>
-                            <h6 class="info-title text-dark">View All Patients</h6>
-                            <p class="info-text">See all registered patients</p>
+                            <h6 class="info-title text-dark">View All Doctors</h6>
+                            <p class="info-text">See all our specialists</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="#" class="action-card h-100 d-flex align-items-center p-3">
+                    <Link to='/contact' class="action-card h-100 d-flex align-items-center p-3">
                         <div class="stat-icon stat-purple me-3">
                             <i class="fa-solid fa-file-lines"></i>
                         </div>
                         <div>
-                            <h6 class="info-title text-dark">Generate Report</h6>
-                            <p class="info-text">View hospital reports</p>
+                            <h6 class="info-title text-dark">Contact Support</h6>
+                            <p class="info-text">Get help from our team</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
