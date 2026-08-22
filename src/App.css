@@ -21,8 +21,9 @@
 }
 
 .doctor-img{
-    margin-left: -90px;
+    margin-top: 25px;
     margin-bottom: 50px;
+    max-width: 420px;
 }
 
 .custom-btn{
@@ -72,6 +73,12 @@
 
 .button-view{
     width: 255px;
+    max-width: 100%;
+}
+
+/* inside a doctor card the button should fill the card, never stick out */
+.card .button-view{
+    width: 100%;
 }
 
 .appointment{
@@ -308,21 +315,31 @@
     .nav-link{
         font-size: 15px;
     }
-}
-
-/* laptop and below */
-@media (max-width: 1199px){
-
-    .button-view{
-        width: 100%;
-    }
 
     .quality-font{
         font-size: 44px;
     }
 
-    .doctor-img{
-        margin-left: 0px;
+    /* the forced line break looks bad once the text wraps on its own */
+    .offer-font br{
+        display: none;
+    }
+
+    .font-3rd-section{
+        font-size: 16px;
+    }
+
+    .third-section img{
+        max-width: 75px;
+    }
+}
+
+/* laptop and below */
+@media (max-width: 1199px){
+
+    /* service cards get wider here, so stop the icon from blowing up */
+    .services-section img{
+        max-width: 160px;
     }
 }
 
@@ -344,10 +361,15 @@
     .doctor-img{
         margin-left: 0px;
         margin-bottom: 20px;
+        max-width: 380px;
     }
 
     .third-section{
         margin-top: 20px;
+    }
+
+    .third-section img{
+        width: 80px;
     }
 
     .banner-icon{
@@ -381,8 +403,12 @@
         font-size: 15px;
     }
 
-    .button-view{
-        width: 100%;
+    .doctor-img{
+        max-width: 280px;
+    }
+
+    .third-section img{
+        width: 70px;
     }
 
     .confirm-btn{

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import useFetch from './useFetch'
 import doctorsUrl from './doctors.json?url'
 import doctorImages from './doctorImages'
-import doctorImg from './assets/doctor.png'
+import doctorImg from './assets/hero-doctor.png'
 import groupImg from './assets/group.png'
 import modernFacilities from './assets/modern facilities.png'
 import support247 from './assets/247 support.png'
@@ -23,26 +23,26 @@ function HomePage() {
   return (
     <>
         <div class="container-fluid second-section">
-        <div class="row">
-            <div class="col-6 p-5 mt-5">
-                <h1 class="quality-font ms-5 ps-5"> Quality Healthcare <br/>
+        <div class="row align-items-center">
+            <div class="col-lg-6 p-4 p-lg-5">
+                <h1 class="quality-font ms-xxl-5 ps-xxl-5"> Quality Healthcare <br/>
                     For a <span class="text-primary">Better Life</span> </h1>
-                <p class="offer-font ms-5 ps-5">We offer comprehensive medical services with modern <br/>
+                <p class="offer-font ms-xxl-5 ps-xxl-5">We offer comprehensive medical services with modern <br/>
                     technology and experienced doctors.</p>
-                <div class="d-flex mt-3 gap-3 ms-5 ps-5">
+                <div class="d-flex flex-column flex-sm-row mt-3 gap-3 ms-xxl-5 ps-xxl-5">
                     <button class="btn btn-primary custom-btn">🗓️ Book Appointment</button>
                     <button class="btn btn-outline-primary custom-btn">View Doctors</button>
                 </div>
             </div>
-            <div class="col-6">
-                <img class="doctor-img" src={doctorImg} alt="" width="90%" />
+            <div class="col-lg-6 text-center">
+                <img class="doctor-img" src={doctorImg} alt="Doctor" width="90%" />
             </div>
         </div>
     </div>
     <div class="container third-section">
         <div class="bg-white shadow p-4 corners">
-        <div class="row">
-            <div class="col-3">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
                 <div class="d-flex">
                     <img class="me-2" src={groupImg} alt="" width="30%"/>
                     <div class="mt-2">
@@ -51,7 +51,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="d-flex">
                     <img class="me-2" src={modernFacilities} alt="" width="30%"/>
                     <div class="mt-2">
@@ -60,7 +60,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="d-flex">
                     <img class="me-2" src={support247} alt="" width="30%"/>
                     <div class="mt-2">
@@ -69,7 +69,7 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="d-flex">
                     <img class="me-2" src={trustedCare} alt="" width="30%"/>
                     <div class="mt-2">
@@ -84,7 +84,7 @@ function HomePage() {
     <div class="container p-4 mt-3 services-section">
     <h6 class="text-center header">OUR SERVICES</h6>
     <h2 class="text-center">We Provide Best Services</h2>
-        <div class="row row-cols-1 row-cols-md-6 g-4 mt-1">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 g-4 mt-1">
         <div class="col">
             <div class="card h-100">
             <img src={generalTreatment} class="mx-auto d-block" alt="..." width="80%"/>
@@ -172,10 +172,10 @@ function HomePage() {
     </section>
     </div>
     <div class="container book-appointment-section">
-        <div class="d-flex align-items-center justify-content-between mx-3 px-3 bg-primary appointment">
-        <div class="d-flex align-items-center flex-row">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between text-center text-lg-start gap-3 p-3 mx-3 px-lg-3 bg-primary appointment">
+        <div class="d-flex flex-column flex-sm-row align-items-center">
             <img src="https://img.freepik.com/premium-vector/schedule-appointment-event-icon-simple-editable-vector-illustration_1178600-926.jpg"
-                alt="Appointment" class="ms-4 rounded-3 appointment" height="70px" width="70px"/>
+                alt="Appointment" class="ms-sm-4 rounded-3 appointment" height="70px" width="70px"/>
             <div class="p-3 ms-2 ">
                 <h4 class="text-white mt-2">Book an Appointment</h4>
                 <p class="text-white">Schedule Your Appointment with our expert doctors today.</p>
@@ -188,7 +188,7 @@ function HomePage() {
     </div>
     <div class="container mt-3">
             <section>
-        <div class="d-flex align-items-center justify-content-around mx-1 px-1">
+        <div class="d-flex flex-wrap align-items-center justify-content-around gap-3 mx-1 px-1">
             <div class="d-flex align-items-center flex-row">
                 <img src="https://logodix.com/logo/825378.png"
                     alt="" height="70px" width="70px"/>
