@@ -1,4 +1,4 @@
-/* ================= GRID ================= */
+
 
 .doctors{
     padding: 40px 0px;
@@ -10,8 +10,6 @@
     gap: 24px;
 }
 
-
-/* ================= CARD ================= */
 
 .doctor-card{
     background-color: white;
@@ -60,8 +58,6 @@
 }
 
 
-/* ================= RESPONSIVE ================= */
-
 @media (max-width: 1199px){
     .doctor-grid{
         grid-template-columns: repeat(3, 1fr);
@@ -80,8 +76,6 @@
     }
 }
 
-/* ================= IMAGE PLACEHOLDER ================= */
-
 .doctor-img-placeholder{
     background-color: #dceeff;
     color: #0d6efd;
@@ -91,8 +85,6 @@
     font-size: 46px;
 }
 
-
-/* ================= PAGINATION ================= */
 
 .pagination .page-link{
     color: #0d6efd;

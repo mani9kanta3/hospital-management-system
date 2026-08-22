@@ -5,9 +5,6 @@
   color: #172554;
 }
 
-
-/* Breadcrumb */
-
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -27,8 +24,6 @@
 }
 
 
-/* Main Profile */
-
 .doctor-profile {
   background: white;
   border: 1px solid #e2e8f0;
@@ -41,8 +36,6 @@
 }
 
 
-/* Doctor Image */
-
 .doctor-profile-image img {
   width: 290px;
   height: 330px;
@@ -51,8 +44,6 @@
   background: #eef2f7;
 }
 
-
-/* Main Details */
 
 .doctor-main-details h1 {
   font-size: 32px;
@@ -84,9 +75,6 @@
   margin: 28px 0;
 }
 
-
-/* Info Rows */
-
 .doctor-info-row {
   display: flex;
   align-items: center;
@@ -104,8 +92,6 @@
   font-size: 16px;
 }
 
-
-/* Appointment Box */
 
 .appointment-box {
   border: 1px solid #dbe2ea;
@@ -142,8 +128,6 @@
 }
 
 
-/* Bottom Section */
-
 .doctor-details-section {
   background: white;
   border: 1px solid #e2e8f0;
@@ -161,9 +145,6 @@
   margin-top: 0;
 }
 
-
-/* About */
-
 .about-doctor {
   padding-right: 30px;
   border-right: 1px solid #e2e8f0;
@@ -177,8 +158,6 @@
 }
 
 
-/* Detail Rows */
-
 .detail-row {
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -190,9 +169,6 @@
 .detail-row strong {
   color: #172554;
 }
-
-
-/* Specialization */
 
 .specialization-section ul {
   padding-left: 22px;
@@ -212,9 +188,6 @@
   color: #475569;
 }
 
-
-/* Loading */
-
 .doctor-loading {
   min-height: 70vh;
   display: flex;
@@ -223,9 +196,6 @@
   font-size: 20px;
   color: #2563eb;
 }
-
-
-/* Error */
 
 .doctor-error {
   text-align: center;
@@ -240,9 +210,6 @@
   color: #2563eb;
   text-decoration: none;
 }
-
-
-/* Responsive */
 
 @media (max-width: 1100px) {
 
